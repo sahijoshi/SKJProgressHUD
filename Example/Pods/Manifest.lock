@@ -1,0 +1,16 @@
+PODS:
+  - SJProgressHUD (0.1.0)
+
+DEPENDENCIES:
+  - SJProgressHUD (from `../`)
+
+EXTERNAL SOURCES:
+  SJProgressHUD:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SJProgressHUD: f119cdfce50b24b132b955cce67e43f92a0d5409
+
+PODFILE CHECKSUM: 8279387743a3bf851659265159fda701e75f33fa
+
+COCOAPODS: 1.4.0
