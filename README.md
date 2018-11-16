@@ -5,10 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/SKJProgressHUD.svg?style=flat)](https://cocoapods.org/pods/SKJProgressHUD)
 [![Platform](https://img.shields.io/cocoapods/p/SKJProgressHUD.svg?style=flat)](https://cocoapods.org/pods/SKJProgressHUD)
 
-SJProgressHUD is a light-weight, highly customizable progress HUD for iOS projects. It has been written based on Singleton Design Pattern.
+SKJProgressHUD is a light-weight, highly customizable progress HUD for iOS projects. It has been written based on Singleton Design Pattern.
 
 ## Preview
-<img src="https://raw.githubusercontent.com/sahijoshi/SJProgressHUD/master/Assets/ProgressHud.gif" width="285"/>
+<img src="https://raw.githubusercontent.com/sahijoshi/SKJProgressHUD/master/Assets/ProgressHud.gif" width="285"/>
 
 
 ## Requirements
@@ -19,24 +19,24 @@ SJProgressHUD is a light-weight, highly customizable progress HUD for iOS projec
 
 ## Installation
 
-SJProgressHUD is available through [CocoaPods](https://cocoapods.org). To install
+SKJProgressHUD is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SJProgressHUD'
+pod 'SKJProgressHUD'
 ```
 ## Usage
-SJProgressHUD is created as a Singleton. So, you don't need to explicitly allocate or instantiate. You can just call methods of SJProgressHUD as SJProgressHUD.someMethod.
+SKJProgressHUD is created as a Singleton. So, you don't need to explicitly allocate or instantiate. You can just call methods of SKJProgressHUD as SKJProgressHUD.someMethod.
 
-#### Show SJProgressHUD
+#### Show SKJProgressHUD
 You can show progress hud with or without status. You can explicitly choose background color and provide mask type.
 ```bash
-SJProgressHUD.show()
-SJProgressHUD.show(withStatus: "Loading...", style: .gray, mask: .dark)
+SKJProgressHUD.show()
+SKJProgressHUD.show(withStatus: "Loading...", style: .gray, mask: .dark)
 ```
 The alert message can also be shown providing delay time to dismiss the progress hud. The alert message can be shown with or without options button. The usage of closure makes the code clean and easier to handle the action returned after tapping option buttons.
 ```bash
-SJProgressHUD.showAlertMessage(withTitle: "Title", message: "messages", delay: 3, mask: .dark) SKJProgressHUD.showAlertMessageWithOptions(message: "Are you sure you want to log out?", maskType:.dark, okAction: { (ok) in
+SKJProgressHUD.showAlertMessage(withTitle: "Title", message: "messages", delay: 3, mask: .dark) SKJProgressHUD.showAlertMessageWithOptions(message: "Are you sure you want to log out?", maskType:.dark, okAction: { (ok) in
             // ok action
             if ok {
                 SKJProgressHUD.dismiss()
@@ -54,7 +54,7 @@ SJProgressHUD.showAlertMessage(withTitle: "Title", message: "messages", delay: 3
 
 You can show progress of certain events by displaying progress bar.
 ```bash
-SJProgressHUD.showProgressBar("Downloading", totalCount: 10000, mask: .dark)
+SKJProgressHUD.showProgressBar("Downloading", totalCount: 10000, mask: .dark)
 
 // Simple example to assign progress of progress bar
 
@@ -68,14 +68,14 @@ DispatchQueue.global(qos: .background).async {
 
 ```
 
-#### Dismiss SJProgressHUD
+#### Dismiss SKJProgressHUD
 To dismiss progress hud. Just call
 
 ```bash
-SJProgressHUD.dismiss()
+SKJProgressHUD.dismiss()
 ```
 
 ## License
 
-SJProgressHUD is available under the MIT license. See the LICENSE file for more info.
+SKJProgressHUD is available under the MIT license. See the LICENSE file for more info.
 
