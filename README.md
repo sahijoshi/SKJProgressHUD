@@ -8,6 +8,7 @@
 SJProgressHUD is a light-weight, highly customizable progress HUD for iOS projects. It has been written based on Singleton Design Pattern.
 
 ## Preview
+<img src="https://raw.githubusercontent.com/sahijoshi/SJProgressHUD/master/Assets/ProgressHud.gif" width="285"/>
 
 ## Example
 
