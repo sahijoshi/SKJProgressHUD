@@ -1,9 +1,9 @@
 use_frameworks!
 
-target 'SJProgressHUD_Example' do
-  pod 'SJProgressHUD', :path => '../'
+target 'SKJProgressHUD_Example' do
+  pod 'SKJProgressHUD', :path => '../'
 
-  target 'SJProgressHUD_Tests' do
+  target 'SKJProgressHUD_Tests' do
     inherit! :search_paths
 
     

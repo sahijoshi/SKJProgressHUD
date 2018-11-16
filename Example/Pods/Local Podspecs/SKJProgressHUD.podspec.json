@@ -1,0 +1,22 @@
+{
+  "name": "SKJProgressHUD",
+  "version": "0.1.0",
+  "summary": "A short description of SKJProgressHUD.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sahik.joshi@gmail.com/SKJProgressHUD",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sahik.joshi@gmail.com": "sahik.joshi@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/sahik.joshi@gmail.com/SKJProgressHUD.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SKJProgressHUD/Classes/**/*"
+}
