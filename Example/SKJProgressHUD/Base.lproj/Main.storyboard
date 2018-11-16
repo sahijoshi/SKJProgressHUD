@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--First View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SKJProgressHUD_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="FirstViewController" customModule="SKJProgressHUD_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -20,7 +20,109 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xP7-Gd-gF0">
+                                <rect key="frame" x="19" y="91" width="337" height="485"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zzk-dN-FIe">
+                                        <rect key="frame" x="82" y="50" width="173" height="30"/>
+                                        <color key="backgroundColor" red="0.96410839640000001" green="0.96410839640000001" blue="0.96410839640000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="173" id="Gev-iN-Ciz"/>
+                                            <constraint firstAttribute="height" constant="30" id="LKw-Cv-J1D"/>
+                                        </constraints>
+                                        <state key="normal" title="Show ">
+                                            <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="show:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="W8h-pO-cFr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4J7-fY-wIh">
+                                        <rect key="frame" x="82" y="95" width="173" height="30"/>
+                                        <color key="backgroundColor" red="0.96410839640000001" green="0.96410839640000001" blue="0.96410839640000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="L1X-lK-MGb"/>
+                                            <constraint firstAttribute="width" constant="173" id="uFD-qh-ul3"/>
+                                        </constraints>
+                                        <state key="normal" title="Show with status"/>
+                                        <connections>
+                                            <action selector="showWithStatus:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QJm-1q-UVs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2D-yk-l9F">
+                                        <rect key="frame" x="9" y="150" width="319" height="30"/>
+                                        <color key="backgroundColor" red="0.96410839640000001" green="0.96410839640000001" blue="0.96410839640000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="319" id="ZbB-YX-iJ5"/>
+                                            <constraint firstAttribute="height" constant="30" id="hFR-Ze-HUD"/>
+                                        </constraints>
+                                        <state key="normal" title="Show and dismiss alert message with delay"/>
+                                        <connections>
+                                            <action selector="showAlertMessage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="MTH-P4-bJu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MZ-yh-fGL">
+                                        <rect key="frame" x="9" y="195" width="319" height="30"/>
+                                        <color key="backgroundColor" red="0.96410839640000001" green="0.96410839640000001" blue="0.96410839640000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="9MR-PC-bHh"/>
+                                            <constraint firstAttribute="width" constant="319" id="NkK-Pn-cHr"/>
+                                        </constraints>
+                                        <state key="normal" title="Show alert message with options"/>
+                                        <connections>
+                                            <action selector="showAlertMessageWithOptions:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ryb-l9-Hqj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ql-cU-iix">
+                                        <rect key="frame" x="82" y="250" width="173" height="30"/>
+                                        <color key="backgroundColor" red="0.96410839640000001" green="0.96410839640000001" blue="0.96410839640000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Tmf-nE-RPX"/>
+                                            <constraint firstAttribute="width" constant="173" id="ila-ao-rYJ"/>
+                                        </constraints>
+                                        <state key="normal" title="Show progress bar"/>
+                                        <connections>
+                                            <action selector="showProgressBar:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QS8-ci-KUU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wso-7k-pOF">
+                                        <rect key="frame" x="82" y="405" width="173" height="30"/>
+                                        <color key="backgroundColor" red="0.96410839640000001" green="0.96410839640000001" blue="0.96410839640000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Qow-gP-Wny"/>
+                                            <constraint firstAttribute="width" constant="173" id="lVy-BW-pfl"/>
+                                        </constraints>
+                                        <state key="normal" title="Dismiss"/>
+                                        <connections>
+                                            <action selector="dismiss:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="y5g-UC-Eqg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="9MZ-yh-fGL" firstAttribute="top" secondItem="N2D-yk-l9F" secondAttribute="bottom" constant="15" id="4AD-lv-v0Q"/>
+                                    <constraint firstItem="N2D-yk-l9F" firstAttribute="top" secondItem="4J7-fY-wIh" secondAttribute="bottom" constant="25" id="4bm-8i-XgS"/>
+                                    <constraint firstItem="Zzk-dN-FIe" firstAttribute="centerX" secondItem="xP7-Gd-gF0" secondAttribute="centerX" id="CUg-iU-Lsm"/>
+                                    <constraint firstItem="9MZ-yh-fGL" firstAttribute="centerX" secondItem="xP7-Gd-gF0" secondAttribute="centerX" id="GFm-b0-zM3"/>
+                                    <constraint firstItem="N2D-yk-l9F" firstAttribute="centerX" secondItem="xP7-Gd-gF0" secondAttribute="centerX" id="LQh-x2-XAe"/>
+                                    <constraint firstAttribute="width" constant="337" id="P82-FC-icz"/>
+                                    <constraint firstItem="8Ql-cU-iix" firstAttribute="centerX" secondItem="xP7-Gd-gF0" secondAttribute="centerX" id="VeR-Z9-ygH"/>
+                                    <constraint firstItem="4J7-fY-wIh" firstAttribute="top" secondItem="Zzk-dN-FIe" secondAttribute="bottom" constant="15" id="cC4-4s-ezd"/>
+                                    <constraint firstItem="8Ql-cU-iix" firstAttribute="top" secondItem="9MZ-yh-fGL" secondAttribute="bottom" constant="25" id="cdN-uD-sF2"/>
+                                    <constraint firstAttribute="height" constant="485" id="gkV-0Z-I1F"/>
+                                    <constraint firstItem="4J7-fY-wIh" firstAttribute="centerX" secondItem="xP7-Gd-gF0" secondAttribute="centerX" id="gtU-wm-Gmt"/>
+                                    <constraint firstItem="wso-7k-pOF" firstAttribute="centerX" secondItem="xP7-Gd-gF0" secondAttribute="centerX" id="myX-Ck-BAf"/>
+                                    <constraint firstItem="Zzk-dN-FIe" firstAttribute="top" secondItem="xP7-Gd-gF0" secondAttribute="top" constant="50" id="n4v-Se-30y"/>
+                                    <constraint firstAttribute="bottom" secondItem="wso-7k-pOF" secondAttribute="bottom" constant="50" id="xh6-7x-kjX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xP7-Gd-gF0" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="9Ux-4d-ssf"/>
+                            <constraint firstItem="xP7-Gd-gF0" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="IIw-ez-p59"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

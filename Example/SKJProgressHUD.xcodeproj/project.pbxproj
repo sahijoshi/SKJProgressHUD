@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		089D601965ABE3549435A64C /* Pods_SKJProgressHUD_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F1E768C1160B0D6051B423 /* Pods_SKJProgressHUD_Tests.framework */; };
+		32494AD8219F613B00AFB9DB /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32494AD7219F613B00AFB9DB /* FirstViewController.swift */; };
+		32494ADD219F61EC00AFB9DB /* SKJProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32494AD9219F61EC00AFB9DB /* SKJProgressHUD.swift */; };
+		32494ADE219F61EC00AFB9DB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32494ADA219F61EC00AFB9DB /* CustomButton.swift */; };
+		32494ADF219F61EC00AFB9DB /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32494ADB219F61EC00AFB9DB /* CustomLabel.swift */; };
+		32494AE0219F61EC00AFB9DB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32494ADC219F61EC00AFB9DB /* UIColor+Extension.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -30,10 +34,14 @@
 /* Begin PBXFileReference section */
 		0CBAE883BF3E90C7004E8A8C /* Pods_SKJProgressHUD_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKJProgressHUD_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F1E768C1160B0D6051B423 /* Pods_SKJProgressHUD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SKJProgressHUD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32494AD7219F613B00AFB9DB /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		32494AD9219F61EC00AFB9DB /* SKJProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKJProgressHUD.swift; sourceTree = "<group>"; };
+		32494ADA219F61EC00AFB9DB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		32494ADB219F61EC00AFB9DB /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		32494ADC219F61EC00AFB9DB /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SKJProgressHUD_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKJProgressHUD_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -41,12 +49,12 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		667187195384CF25C4371404 /* Pods-SKJProgressHUD_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKJProgressHUD_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKJProgressHUD_Example/Pods-SKJProgressHUD_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7FA6B9643C914AF1B752570D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7FA6B9643C914AF1B752570D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8622A2F6372D46AD406AA742 /* Pods-SKJProgressHUD_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKJProgressHUD_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SKJProgressHUD_Tests/Pods-SKJProgressHUD_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		94A96CDD3ED86D6DCD855566 /* Pods-SKJProgressHUD_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKJProgressHUD_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKJProgressHUD_Tests/Pods-SKJProgressHUD_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		AB4983EB3E14BD6B6F13E999 /* SKJProgressHUD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SKJProgressHUD.podspec; path = ../SKJProgressHUD.podspec; sourceTree = "<group>"; };
+		AB4983EB3E14BD6B6F13E999 /* SKJProgressHUD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SKJProgressHUD.podspec; path = ../SKJProgressHUD.podspec; sourceTree = "<group>"; };
 		C5A69FAE5822552E0B376DDD /* Pods-SKJProgressHUD_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SKJProgressHUD_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SKJProgressHUD_Example/Pods-SKJProgressHUD_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D41861C5ECFD1312D6C31EBA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D41861C5ECFD1312D6C31EBA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		32494AE1219F62D100AFB9DB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32494AD9219F61EC00AFB9DB /* SKJProgressHUD.swift */,
+				32494ADA219F61EC00AFB9DB /* CustomButton.swift */,
+				32494ADB219F61EC00AFB9DB /* CustomLabel.swift */,
+				32494ADC219F61EC00AFB9DB /* UIColor+Extension.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +121,9 @@
 		607FACD21AFB9204008FA782 /* Example for SKJProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				32494AE1219F62D100AFB9DB /* Sources */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				32494AD7219F613B00AFB9DB /* FirstViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -370,8 +390,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				32494ADE219F61EC00AFB9DB /* CustomButton.swift in Sources */,
+				32494ADF219F61EC00AFB9DB /* CustomLabel.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				32494AE0219F61EC00AFB9DB /* UIColor+Extension.swift in Sources */,
+				32494AD8219F613B00AFB9DB /* FirstViewController.swift in Sources */,
+				32494ADD219F61EC00AFB9DB /* SKJProgressHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,7 +547,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -538,7 +563,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -559,7 +585,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKJProgressHUD_Example.app/SKJProgressHUD_Example";
 			};
 			name = Debug;
@@ -577,7 +603,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKJProgressHUD_Example.app/SKJProgressHUD_Example";
 			};
 			name = Release;
