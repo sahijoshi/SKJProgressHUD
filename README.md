@@ -36,16 +36,20 @@ SJProgressHUD.show(withStatus: "Loading...", style: .gray, mask: .dark)
 ```
 The alert message can also be shown providing delay time to dismiss the progress hud. The alert message can be shown with or without options button. The usage of closure makes the code clean and easier to handle the action returned after tapping option buttons.
 ```bash
-SJProgressHUD.showAlertMessage(withTitle: "Title", message: "messages", delay: 3, mask: .dark)
-SJProgressHUD.showAlertMessageWithOptions("Submit", btnCancelTitle: "Cancel", message: "Do you proceed further?", maskType: .dark, okAction: { (submit) in
-if submit {
-// Do some action
+SJProgressHUD.showAlertMessage(withTitle: "Title", message: "messages", delay: 3, mask: .dark) SKJProgressHUD.showAlertMessageWithOptions(message: "Are you sure you want to log out?", maskType:.dark, okAction: { (ok) in
+            // ok action
+            if ok {
+                SKJProgressHUD.dismiss()
+                print("perform action after ok")
+            }
+        }) { (cancel) in
+            // close action
+            if cancel {
+                SKJProgressHUD.dismiss()
+                print("perform action after cancel")
+            }
 }
-}) { (cancel) in
-if cancel {
-// cancel the action
-}
-}
+
 ```
 
 You can show progress of certain events by displaying progress bar.
@@ -55,12 +59,13 @@ SJProgressHUD.showProgressBar("Downloading", totalCount: 10000, mask: .dark)
 // Simple example to assign progress of progress bar
 
 DispatchQueue.global(qos: .background).async {
-for progress in 1...10000 {
-DispatchQueue.main.sync {
-SJProgressHUD.sharedInstance.progressValue = progress
+            for progress in 1...10000 {
+                DispatchQueue.main.sync {
+                    SKJProgressHUD.sharedInstance.progressValue = progress
+                }
+            }
 }
-}
-}
+
 ```
 
 #### Dismiss SJProgressHUD
