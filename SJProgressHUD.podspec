@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/sahijoshi/SJProgressHUD'
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.3'
 
-  s.source_files = 'SJProgressHUD/Classes/**/*.swift'
+  s.source_files = 'SJProgressHUD/Classes/**/*'
   
   # s.resource_bundles = {
   #   'SJProgressHUD' => ['SJProgressHUD/Assets/*.png']

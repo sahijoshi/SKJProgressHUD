@@ -30,7 +30,6 @@
 
 /* Begin PBXFileReference section */
 		0C597ECFC2015C0F87590545E03D6B05 /* Pods-SJProgressHUD_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SJProgressHUD_Example-umbrella.h"; sourceTree = "<group>"; };
-		10384A874088C1835ECA7C6591935722 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1E9C66B1CF896E00E5ACB3FB81D21138 /* Pods-SJProgressHUD_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SJProgressHUD_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		212F0FA0973C72C5589D5A95F93FD693 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25BCAC52A812BA1C3CB53DDD89528062 /* Pods-SJProgressHUD_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SJProgressHUD_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -50,8 +49,6 @@
 		8EEF7A1FAF98C2FB1BA2F6BB61ACB68C /* Pods-SJProgressHUD_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SJProgressHUD_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A011E6294FD462DA850180E061F4BA22 /* Pods-SJProgressHUD_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SJProgressHUD_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A268B145AC0D6E06EB098E4C38180D59 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		A310AD6D27190F8549BCF4B8EDC782FB /* SJProgressHUD.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = SJProgressHUD.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A453EE7445E8E168630CD57AAEBAA853 /* Pods-SJProgressHUD_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SJProgressHUD_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A8C30E530BC2AA7AE9ED785DB606B6E6 /* Pods-SJProgressHUD_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SJProgressHUD_Tests-resources.sh"; sourceTree = "<group>"; };
 		AA988D507B3ACB3264CDD1FE6E16C829 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,7 +93,6 @@
 		170CFA1A4759B89765C2917BB0635335 /* SJProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
-				9965E31125637F5118A66360850B46C5 /* Pod */,
 				1980B918E3ABCBC7CB136BF2716BD110 /* Support Files */,
 			);
 			name = SJProgressHUD;
@@ -152,16 +148,6 @@
 				D0A42F5385CE74B847557A218F3C7015 /* Products */,
 				FF23B9AE50E000FD5039F24ADC7FB5F7 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		9965E31125637F5118A66360850B46C5 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				A268B145AC0D6E06EB098E4C38180D59 /* LICENSE */,
-				10384A874088C1835ECA7C6591935722 /* README.md */,
-				A310AD6D27190F8549BCF4B8EDC782FB /* SJProgressHUD.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
