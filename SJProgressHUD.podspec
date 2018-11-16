@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'SJProgressHUD'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of SJProgressHUD.'
+  s.summary          = 'A light-weight and highly customizable progress HUD for iOS projects.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,16 +21,16 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/sahik.joshi@gmail.com/SJProgressHUD'
+  s.homepage         = 'https://github.com/sahijoshi/SJProgressHUD'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sahik.joshi@gmail.com' => 'sahik.joshi@gmail.com' }
-  s.source           = { :git => 'https://github.com/sahik.joshi@gmail.com/SJProgressHUD.git', :tag => s.version.to_s }
+  s.author           = { 'sahi joshi' => 'sahik.joshi@gmail.com' }
+  s.source           = { :git => 'https://github.com/sahijoshi/SJProgressHUD.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.3'
 
-  s.source_files = 'SJProgressHUD/Classes/**/*'
+  s.source_files = 'SJProgressHUD/Classes/**/*.swift'
   
   # s.resource_bundles = {
   #   'SJProgressHUD' => ['SJProgressHUD/Assets/*.png']
